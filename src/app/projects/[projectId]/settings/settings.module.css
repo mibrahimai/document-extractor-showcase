@@ -1,0 +1,234 @@
+.shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.75rem 4rem;
+}
+
+.headRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.shell h1 {
+  margin: 0;
+  font-size: 1.65rem;
+}
+
+.headSub {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+}
+
+.headActions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.85rem;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.row label {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.row input[type="text"],
+.row input[type="number"],
+.row textarea,
+.row select {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.5rem 0.6rem;
+  background: var(--field);
+  font: inherit;
+  width: 100%;
+}
+
+.hint {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0.15rem 0 0;
+}
+
+.fieldsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+}
+
+.fieldsTable th {
+  text-align: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  padding-bottom: 0.4rem;
+}
+
+.fieldsTable td {
+  padding: 0.3rem 0.3rem 0.3rem 0;
+  vertical-align: middle;
+}
+
+.fieldRow td {
+  padding-top: 0.55rem;
+}
+
+.descRow td {
+  padding-top: 0;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.fieldsTable .descRow textarea {
+  display: block;
+  width: 100%;
+  min-height: 2rem;
+  field-sizing: content; /* grows with its text where supported */
+  resize: vertical;
+  padding: 0.35rem 0.5rem;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ink-2);
+  background: var(--panel-2);
+}
+
+.fieldsTable input[type="text"],
+.fieldsTable select {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.35rem 0.5rem;
+  width: 100%;
+  font: inherit;
+}
+
+.centerCell {
+  text-align: center;
+}
+
+.removeBtn {
+  border: 0;
+  background: transparent;
+  color: var(--bad);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.addBtn,
+.saveBtn,
+.ghostBtn {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.addBtn {
+  background: var(--btn-bg);
+}
+
+.saveBtn {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.saveBtn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.ghostBtn {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.sourceList {
+  list-style: none;
+  margin: 0 0 0.85rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sourceList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.sourceList code {
+  color: var(--muted);
+  font-size: 0.78rem;
+  word-break: break-all;
+}
+
+.addSource {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.addSource select,
+.addSource input {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+  font: inherit;
+}
+
+.error {
+  color: var(--bad);
+  font-size: 0.85rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+}

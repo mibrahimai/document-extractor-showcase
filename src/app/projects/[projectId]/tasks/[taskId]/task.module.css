@@ -1,0 +1,309 @@
+.shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.back {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  border: 1px solid var(--line);
+}
+
+.stage_sourcing {
+  color: var(--warn);
+  border-color: var(--warn-line);
+}
+
+.stage_ordered,
+.stage_shipped {
+  color: var(--accent);
+}
+
+.stage_delivered,
+.stage_invoiced {
+  color: var(--ok);
+  border-color: var(--ok-line);
+}
+
+.stage_closed {
+  color: var(--ink-2);
+  border-color: var(--line-strong);
+  background: var(--panel-2);
+}
+
+.stepper {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+.stepItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-transform: capitalize;
+}
+
+.stepItem:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--line);
+  z-index: 0;
+}
+
+.stepDone:not(:first-child)::before,
+.stepCurrent:not(:first-child)::before {
+  background: var(--accent);
+}
+
+.stepDot {
+  position: relative;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--panel);
+  border: 2px solid var(--line-strong);
+  color: var(--muted);
+}
+
+.stepDone .stepDot {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.stepCurrent .stepDot {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.stepDone .stepName,
+.stepCurrent .stepName {
+  color: var(--ink);
+  font-weight: 550;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1.1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.panel h3 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.summary {
+  white-space: pre-wrap;
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  background: var(--field);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.7rem 0.85rem;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row select,
+.row input,
+.quoteFields input,
+.invoiceForm input {
+  font: inherit;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--field);
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.error {
+  color: var(--bad);
+  font-size: 0.85rem;
+}
+
+.primaryBtn,
+.ghostBtn {
+  border: 0;
+  border-radius: var(--radius);
+  padding: 0.5rem 0.85rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.primaryBtn {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.primaryBtn:disabled,
+.ghostBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.ghostBtn {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+}
+
+.quoteCard {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.85rem;
+  background: var(--field);
+}
+
+.quoteCard:last-child {
+  margin-bottom: 0;
+}
+
+.quoteHead {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.winnerTag {
+  font-size: 0.72rem;
+  color: var(--ok);
+  border: 1px solid var(--ok-line);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+}
+
+.emailDetails {
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.emailDetails summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.emailPreview {
+  white-space: pre-wrap;
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ink-2);
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.quoteFields {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.6rem 0;
+}
+
+.quoteFields label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.quoteFields input {
+  width: 120px;
+}
+
+.notesLabel input {
+  width: 220px;
+}
+
+.quoteActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.invoiceForm {
+  margin-top: 0.75rem;
+}
+
+.invoiceForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.invoiceForm input {
+  width: 160px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}

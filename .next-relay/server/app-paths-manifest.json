@@ -1,0 +1,15 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/projects/[projectId]/import/page": "app/projects/[projectId]/import/page.js",
+  "/projects/[projectId]/settings/page": "app/projects/[projectId]/settings/page.js",
+  "/projects/[projectId]/review/[id]/page": "app/projects/[projectId]/review/[id]/page.js",
+  "/projects/[projectId]/tasks/[taskId]/page": "app/projects/[projectId]/tasks/[taskId]/page.js",
+  "/projects/[projectId]/page": "app/projects/[projectId]/page.js",
+  "/projects/[projectId]/tasks/page": "app/projects/[projectId]/tasks/page.js",
+  "/projects/[projectId]/test/page": "app/projects/[projectId]/test/page.js",
+  "/projects/new/page": "app/projects/new/page.js",
+  "/projects/[projectId]/vendors/page": "app/projects/[projectId]/vendors/page.js",
+  "/projects/page": "app/projects/page.js"
+}

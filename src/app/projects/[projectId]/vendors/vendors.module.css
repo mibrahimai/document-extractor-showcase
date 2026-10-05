@@ -1,0 +1,109 @@
+.shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.back {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.shell h1 {
+  margin: 0 0 0.3rem;
+  font-size: 1.6rem;
+}
+
+.shell > p {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.section input {
+  font: inherit;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--field);
+}
+
+.row input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.notesInput {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.runBtn,
+.ghostBtn {
+  border: 0;
+  border-radius: var(--radius);
+  padding: 0.5rem 0.85rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.runBtn {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.runBtn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.ghostBtn {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.6rem;
+  font-size: 0.82rem;
+}
+
+.error {
+  color: var(--bad);
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  font-size: 0.9rem;
+}

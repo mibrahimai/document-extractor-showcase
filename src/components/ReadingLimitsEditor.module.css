@@ -1,0 +1,104 @@
+.machine {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  padding: 0.7rem 0.85rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.machine svg {
+  margin-top: 3px;
+  color: var(--accent);
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.labelCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.labelCol label {
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.help {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.inputCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inputRow input {
+  width: 140px;
+  font: inherit;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--field);
+}
+
+.inputRow input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.unit,
+.meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.warn {
+  font-size: 0.78rem;
+  color: var(--warn);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.footnote {
+  margin: 0.8rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
