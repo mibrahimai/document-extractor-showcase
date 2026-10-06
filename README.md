@@ -1,9 +1,7 @@
-# 📄 Document Extractor - Frontend Showcase
-
-[![Live Demo](https://img.shields.io/badge/Try_Live_Demo_Here-Vercel-black?style=for-the-badge&logo=vercel)](#)
+# 📄 Document Extractor - Showcase
 
 > 🔒 **Architecture Note (Portfolio Strategy):** 
-> To protect the core intellectual property, this repository acts as a **"Hollow" Showcase** (Frontend only). The heavy lifting—FastAPI, Python extraction logic, prompt engineering, and database integrations—is maintained securely in a private repository deployed to a dedicated VPS.
+> To protect the core intellectual property, this repository acts as a **100% Hollow Showcase** (Documentation only). The entire application—FastAPI, Python extraction logic, Next.js frontend, and prompt engineering—is maintained securely in a private repository and deployed to a dedicated VPS.
 
 ---
 
@@ -33,12 +31,10 @@ A self-hosted pipeline that turns piles of PDFs, scans, Word and Excel files int
 
 ## 🏗️ System Architecture
 
-This showcase highlights the modern, responsive **Next.js/React** user interface. Below is how it communicates with the private backend:
-
 ```mermaid
 flowchart LR
-    User([👨‍💻 User]) --> |Uploads PDF| FE[🖥️ Next.js Frontend<br/>Showcase Repo]
-    FE --> |HTTPS REST| BE[🔒 FastAPI Backend<br/>Private Repo]
+    User([👨‍💻 User]) --> |Uploads PDF| FE[🖥️ Next.js Frontend]
+    FE --> |HTTPS REST| BE[🔒 FastAPI Backend]
     
     subgraph Secure VPS
         BE --> |Prompt & Context| AI[🧠 AI / Ollama LLM]
@@ -65,32 +61,6 @@ Starter templates ship for these document types. Each one is a normal, fully edi
 | Shipping documents | B/L #, shipper, consignee, ports, containers, weight | Freight forwarders |
 | Vehicle listings | Make, model, year, price, mileage, VIN | Dealers, marketplaces |
 | Contracts | Parties, effective date, term, renewal, governing law | Legal ops, procurement |
-
-## 🛠️ Tech Stack
-
-- **Framework**: [Next.js 15](https://nextjs.org/) (React 19)
-- **Language**: TypeScript
-- **Tooling**: Turbopack, ESLint
-
-## ⌨️ Keyboard shortcuts
-
-| Keys | Where | Action |
-|---|---|---|
-| `Ctrl` `K` | Anywhere | Command palette: jump to any project, page or document |
-| `Ctrl` `Enter` | Review | Approve and open the next document |
-| `Ctrl` `S` | Review | Save corrections |
-| `J` / `K` | Review | Next / previous document |
-
-## ⚙️ Configuration (Frontend)
-
-To run this frontend locally, you simply need Node.js 20+ and to install dependencies:
-
-```bash
-npm install
-npm run dev
-```
-
-*(Note: Without the private backend running, the frontend will show the UI but won't be able to process actual documents. Please use the [Live Demo](#) to see it in action.)*
 
 ---
 *Created as part of a professional portfolio showcasing full-stack product development.*
