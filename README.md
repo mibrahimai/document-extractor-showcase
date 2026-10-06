@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📄 Document Extractor - Frontend Showcase
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Try_Live_Demo_Here-Vercel-black?style=for-the-badge&logo=vercel)](#)
 
-First, run the development server:
+Welcome to the **Document Extractor** frontend showcase repository! 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This repository houses the modern, responsive **Next.js/React** user interface for a powerful AI document extraction product. It is designed to beautifully display complex document data, provide a seamless UX for uploading files, and interact efficiently with a custom backend.
+
+> 🔒 **Architecture Note (Portfolio Strategy):** 
+> To protect the core intellectual property, this repository acts as a **"Hollow" Showcase** (Frontend only). The heavy lifting—FastAPI, Python extraction logic, prompt engineering, and database integrations—is maintained securely in a private repository deployed to a dedicated VPS.
+
+## 🚀 Features
+- **Next.js 15 App Router** for lightning-fast server-side rendering and routing.
+- **Beautiful & Modern UI** built for reading structured extractions at a glance.
+- **Robust API Client** designed to securely handle requests to the private core backend.
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart LR
+    User([👨‍💻 User]) --> |Uploads PDF| FE[🖥️ Next.js Frontend\n(Showcase Repo)]
+    FE --> |HTTPS (REST)| BE[🔒 FastAPI Backend\n(Private Repo)]
+    
+    subgraph Secure VPS
+        BE --> |Prompt & Context| AI[🧠 AI/Ollama LLM]
+        AI --> |Structured Extraction| BE
+        BE --> |Store Data| DB[(SQLite/Postgres)]
+    end
+    
+    BE --> |Return JSON| FE
+    FE --> |Renders UI| User
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
+- **Framework**: [Next.js 15](https://nextjs.org/) (React 19)
+- **Language**: TypeScript
+- **Tooling**: Turbopack, ESLint
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎥 Demo Video
+*(Insert Loom or YouTube demo link here showing the extraction process in real-time)*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created as part of a professional portfolio showcasing full-stack product development.*
