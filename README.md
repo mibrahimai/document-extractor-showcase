@@ -57,5 +57,3 @@ Starter templates ship for these document types. Each one is a normal, fully edi
 | Vehicle listings | Make, model, year, price, mileage, VIN | Dealers, marketplaces |
 | Contracts | Parties, effective date, term, renewal, governing law | Legal ops, procurement |
 
----
-*Created as part of a professional portfolio showcasing full-stack product development.*
