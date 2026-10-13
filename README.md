@@ -1,10 +1,5 @@
 # 📄 Document Extractor - Showcase
 
-> 🔒 **Architecture Note (Portfolio Strategy):** 
-> To protect the core intellectual property, this repository acts as a **100% Hollow Showcase** (Documentation only). The entire application—FastAPI, Python extraction logic, Next.js frontend, and prompt engineering—is maintained securely in a private repository and deployed to a dedicated VPS.
-
----
-
 **Messy documents in. Clean, reviewed data out.**
 
 A self-hosted pipeline that turns piles of PDFs, scans, Word and Excel files into structured, human-verified rows, using a local LLM, so documents never leave your machine. Describe a document type in plain English, list the fields you want, and it does the rest: works out which files are relevant, extracts every field with a confidence score, sends only the uncertain ones to a person, and exports one standardized spreadsheet.
